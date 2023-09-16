@@ -1,38 +1,212 @@
-.App {
-  text-align: center;
-}
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.app{
   display: flex;
-  flex-direction: column;
+}
+body{
+  background: linear-gradient(90deg, #00C9FF 0%, #92FE9D 100%);
+}
+.container{
+  width: calc(100% - 200px);
+  margin: 0 auto;
+  height: 100vh;
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  gap: 50px;
+  
+}
+.wrapper{
+ background-color: #fff;
+  width: 600px;
+  padding: 20px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  height: 80%;
+  margin-top: 50px;
+  position: relative;
+}
+.searchContainer{
+  display: flex;
+  align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+ul{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+ 
+  padding: 10px 0;
 }
+.ul1{
+  position: absolute;
+  z-index: 999;
+  background: #fff;
+ 
+  top: 65px;
+  padding: 10px 21px;
+  border: 1px solid #00ffc3;
+  left: 25px;
+  
+}
+.ul2{
+  overflow-y: scroll;
+}
+.wrapper input{
+  padding: 10px 20px;
+  font-size: 15px;
+  width: 80%;
+  border: 1px solid #00ffc3;
+  outline: none;
+  border-right: none;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+.searchbtn{
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+ul li{
+  list-style: none;
+  font-size: 20px;
+}
+button{
+  padding: 10px 20px;
+  font-size: 15px;
+  font-weight: bold;
+  background-color: #00ffc3;
+  color: #fff;
+  border: 1px solid #00ffc3;
+  cursor: pointer;
+  transition: 0.2s;
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+}
+button:hover{
+  background-color: #fff;
+  color: #00ffc3;
+}
+.timer{
+  position: relative;
+  background: #fff;
+  height: 300px;
+  border-radius: 10px;
+}
+.inputBox{
+  position: absolute;
+  background: #fff;
+  color: black;
+  padding: 10px 20px;
+  border-radius: 5px;
+  top: -10px;
+
+}
+.inputBox input{
+  border-radius: 5px;
+  font-size: 15px;
+  padding: 5px;
+}
+.timer h1{
+  text-align: center;
+}
+.timer button{
+  background: #000;
+}
+@media only screen and (max-width: 1024px) {
+  .container{
+    
+    width: calc(100% - 100px);
   }
-  to {
-    transform: rotate(360deg);
+  .wrapper{
+    background-color: #fff;
+     width: 500px;
+    
+   }
+}
+@media only screen and (max-width: 768px) {
+  .container{
+    display: grid;
+    grid-template-columns: 1fr;
   }
+  .wrapper{
+    background-color: #fff;
+     width: 500px;
+    padding-bottom: 50px;
+   }
+   .timer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+   }
+}
+@media only screen and (max-width: 768px) {
+  .container{
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .wrapper{
+    background-color: #fff;
+     width: 500px;
+    padding-bottom: 50px;
+   }
+   .timer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+   }
+}
+@media only screen and (max-width: 768px) {
+  .container{
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .wrapper{
+    background-color: #fff;
+     width: 500px;
+    padding-bottom: 50px;
+   }
+   .timer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+   }
+}
+@media only screen and (max-width: 426px) {
+  body{
+    background: no-repeat;
+  }
+  .container{
+    width: calc(100% - 50px);
+  }
+  .wrapper{
+
+     width: 400px;
+   
+   }
+}
+@media only screen and (max-width: 426px) {
+  body{
+    background: no-repeat;
+  }
+  .container{
+    width: calc(100% - 50px);
+  }
+  .wrapper{
+    background-color: #fff;
+     width: 300px;
+    padding-bottom: 50px;
+   }
+   .timer{
+  
+   }
 }
